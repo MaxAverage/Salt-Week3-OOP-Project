@@ -23,8 +23,8 @@ public class PlayerStats {
     public void randomizePlayerStats() {
         Random rand = new Random();
         food = rand.nextDouble(0.7, 1);
-        thirst = Math.random();
-        tired = Math.nextDown(0.7);
+        thirst = rand.nextDouble(0.8, 1);
+        tired = rand.nextDouble(0.5, 1);
     }
 
     public void getStats(){
