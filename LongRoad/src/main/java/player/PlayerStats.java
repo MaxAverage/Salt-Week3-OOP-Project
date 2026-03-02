@@ -4,16 +4,17 @@ import java.util.Random;
 
 
 public class PlayerStats {
-    public double getFood() {
-        return food;
+
+    public void setFood(double food) {
+        this.food = food;
     }
 
-    public double getTired() {
-        return tired;
+    public void setThirst(double thirst) {
+        this.thirst = thirst;
     }
 
-    public double getThirst() {
-        return thirst;
+    public void setTired(double tired) {
+        this.tired = tired;
     }
 
     private double food;
