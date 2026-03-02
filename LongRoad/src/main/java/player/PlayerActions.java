@@ -60,10 +60,10 @@ public class PlayerActions {
         pStats.getStats();
     }
     private static void drive() {
-
+        System.out.println("You cannot drive that rusty piece of shit");
     }
     private static void explore() {
-        
+        System.out.println("Theres nothing to explore right now");
     }
     private static void quit() {
         PlayerController.isPlaying = false;
