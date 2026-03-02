@@ -13,7 +13,7 @@ public class PlayerController {
     static Scanner sc = new Scanner(System.in);
     static Cars cars = new Cars();
 
-    static String car;
+    public static String car;
 
     public static void main(String[] args) {
         playerStats.randomizePlayerStats();

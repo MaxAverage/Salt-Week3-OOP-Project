@@ -1,9 +1,11 @@
 package player;
 
 import Extras.Sleep;
+import Garage.Cars;
 
 public class PlayerActions {
 
+    static PlayerController playerController;
     static PlayerStats pStats = new PlayerStats();
     static Sleep sleep = new Sleep();
 
@@ -22,7 +24,7 @@ public class PlayerActions {
                 sleep();
                 break;
             case "drive":
-                drive();
+                drive(PlayerController.car);
                 break;
             case "explore":
                 explore();
@@ -59,8 +61,11 @@ public class PlayerActions {
     private static void stats() {
         pStats.getStats();
     }
-    private static void drive() {
-        System.out.println("You cannot drive that rusty piece of shit");
+    private static void drive(String car) {
+        if (car.equals("Opel") || car.equals("Ford") || car.equals("Toyota")) {
+            System.out.println("You cannot drive that rusty piece of shit");
+        }
+        else System.out.println("You fell asleep behind the wheel and died");
     }
     private static void explore() {
         System.out.println("Theres nothing to explore right now");
