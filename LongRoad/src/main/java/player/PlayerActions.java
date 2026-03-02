@@ -45,7 +45,7 @@ public class PlayerActions {
         System.out.println("\n quit: Quit application \n ---------commands--------");
     }
     private static void lookNearby() {
-
+        System.out.println("The garage is full of junk: [items] and the rusty car");
     }
     private static void sleep() {
         if(pStats.getTired() > 0.9){
@@ -63,7 +63,7 @@ public class PlayerActions {
 
     }
     private static void explore() {
-
+        
     }
     private static void quit() {
         PlayerController.isPlaying = false;
