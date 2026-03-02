@@ -6,6 +6,7 @@ import java.util.Scanner;
 public class PlayerController {
 
     static PlayerStats playerStats = new PlayerStats();
+    static PlayerActions playerActions = new PlayerActions();
     static boolean isPlaying = true;
     static Scanner sc = new Scanner(System.in);
 
@@ -16,13 +17,12 @@ public class PlayerController {
         wlcPlayer.NewPlayer();
         String playerName = wlcPlayer.playerName();
         wlcPlayer.introduction();
-        do {
-            nextInput();
-        }while(isPlaying);
+        nextInput();
     }
     public static void nextInput(){
-        PlayerActions playerActions = new PlayerActions();
-        String input = sc.nextLine();
-        playerActions.playerDo(input);
+        while(isPlaying){
+            String input = sc.nextLine();
+            playerActions.playerDo(input);
+        }
     }
 }

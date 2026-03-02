@@ -2,20 +2,33 @@ package player;
 
 public class PlayerActions {
 
+    PlayerController controller = new PlayerController();
+
     public void playerDo(String input) {
         switch (input) {
             case "help":
                 helpCommands();
+                break;
             case "nearby":
                 lookNearby();
+                break;
+            case "stats" :
+                stats();
+                break;
             case "sleep":
                 sleep();
+                break;
             case "drive":
                 drive();
+                break;
             case "explore":
                 explore();
+                break;
             case "quit" :
                 quit();
+                break;
+                default:
+                    System.out.println("Invalid input");
         }
     }
     private static void helpCommands(){
@@ -31,6 +44,9 @@ public class PlayerActions {
 
     }
     private static void sleep() {
+
+    }
+    private static void stats() {
 
     }
     private static void drive() {

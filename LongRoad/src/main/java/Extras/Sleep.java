@@ -1,9 +1,9 @@
 package Extras;
 
 public class Sleep {
-    public void sleep1Sec(){
+    public void sleepForSeconds(int seconds) {
         try {
-            for (int i = 0; i < 1; i++) {
+            for (int i = 0; i < seconds; i++) {
 
                 // method will sleep the thread
                 Thread.sleep(1000);
