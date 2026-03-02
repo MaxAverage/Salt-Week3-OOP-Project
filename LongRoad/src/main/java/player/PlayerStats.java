@@ -6,20 +6,20 @@ import java.util.Random;
 public class PlayerStats {
 
     public void setFood(double food) {
-        this.food = food;
+        PlayerStats.food = food;
     }
 
     public void setThirst(double thirst) {
-        this.thirst = thirst;
+        PlayerStats.thirst = thirst;
     }
 
     public void setTired(double tired) {
-        this.tired = tired;
+        PlayerStats.tired = tired;
     }
 
-    private double food;
-    private double thirst;
-    private double tired;
+    private static double food;
+    private static double thirst;
+    private static double tired;
 
     public void randomizePlayerStats() {
         Random rand = new Random();

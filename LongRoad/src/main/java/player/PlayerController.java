@@ -11,7 +11,6 @@ public class PlayerController {
     static Scanner sc = new Scanner(System.in);
 
     public static void main(String[] args) {
-
         playerStats.randomizePlayerStats();
         WelcomePlayer wlcPlayer = new WelcomePlayer();
         wlcPlayer.NewPlayer();
