@@ -48,7 +48,13 @@ public class PlayerActions {
 
     }
     private static void sleep() {
-
+        if(pStats.getTired() > 0.9){
+            System.out.println("You are not tired enough to sleep");
+            return;
+        }
+        System.out.println("The slumber sets in");
+        sleep.sleepTilFull();
+        pStats.setTired(1);
     }
     private static void stats() {
         pStats.getStats();

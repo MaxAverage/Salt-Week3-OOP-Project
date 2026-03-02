@@ -17,6 +17,18 @@ public class PlayerStats {
         PlayerStats.tired = tired;
     }
 
+    public static double getFood() {
+        return food;
+    }
+
+    public static double getThirst() {
+        return thirst;
+    }
+
+    public static double getTired() {
+        return tired;
+    }
+
     private static double food;
     private static double thirst;
     private static double tired;
