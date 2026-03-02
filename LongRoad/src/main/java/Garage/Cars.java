@@ -1,7 +1,13 @@
 package Garage;
 
+import java.util.Random;
+
 public class Cars {
-    public enum carBrands{
-        BMW, TOYOTA, SUBARU, VOLVO, MERCEDES, FORD, OPEL
+    private static enum carBrands{
+        BMW, Toyota, Subaru, Volvo, Mercedes, Ford, Opel
+    }
+
+    public String getRandomCar(){
+        return carBrands.values()[new Random().nextInt(carBrands.values().length)].toString();
     }
 }

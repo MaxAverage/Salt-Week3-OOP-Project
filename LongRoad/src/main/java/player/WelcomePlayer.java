@@ -20,15 +20,15 @@ public class WelcomePlayer {
         System.out.println("Enter your name: ");
         return sc.nextLine();
     }
-    public void introduction(){
+    public void introduction(String car){
         System.out.println("------------------------");
         System.out.println("Use 'help' for commands");
         System.out.println("------------------------");
         sleep.sleepForSeconds(1);
-        System.out.println("You wake up in a garage");
-        sleep.sleepForSeconds(1);
-        System.out.println("Dazed, you try to remember");
+        System.out.println("You wake up in a garage next to a " + car);
         sleep.sleepForSeconds(2);
-        System.out.println("You need to fix this car \uD83D\uDE97 and drive home");
+        System.out.println("Dazed, you try to remember...");
+        sleep.sleepForSeconds(2);
+        System.out.println("You need to fix the " + car + " and drive home");
     }
 }

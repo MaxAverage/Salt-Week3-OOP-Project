@@ -37,11 +37,11 @@ public class PlayerActions {
     private static void helpCommands(){
         System.out.println("---------commands--------");
         System.out.println("stats: Check your stats \n nearby: Check what is nearby ");
-        sleep.sleepForSeconds(1);
+        sleep.sleepForSeconds(2);
         System.out.println("\n sleep: sleeps until fully rested \n drive: Drive for an hour ");
-        sleep.sleepForSeconds(1);
+        sleep.sleepForSeconds(2);
         System.out.println("\n explore: Look for supplies \n attack: Use primary weapon to attack");
-        sleep.sleepForSeconds(1);
+        sleep.sleepForSeconds(2);
         System.out.println("\n quit: Quit application \n ---------commands--------");
     }
     private static void lookNearby() {
