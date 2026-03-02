@@ -23,16 +23,12 @@ public class PlayerStats {
 
     public void randomizePlayerStats() {
         Random rand = new Random();
-        food = rand.nextDouble(0.7, 1);
+        food = rand.nextDouble(0.6, 1);
         thirst = rand.nextDouble(0.8, 1);
         tired = rand.nextDouble(0.5, 1);
     }
 
     public void getStats(){
-        String stats = "";
-        stats += "Food: " + food + "\n"
-                + "Thirst: " + thirst + "\n"
-                + "Tired: " + tired + "\n";
-        System.out.println(stats);
+        System.out.printf("Food: %.0f%% \n Thirst: %.0f%% \n Tired: %.0f%% \n", food * 100, thirst * 100, tired * 100);
     }
 }
